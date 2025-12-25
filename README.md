@@ -51,7 +51,7 @@ for i in {1..5}; do
   --aaindexfile /path/generate-feature/BV.csv.npy 
   --fold ${i} 
   --outdir /path/save_dir
-  --type BV（or） 
+  --type BV（or BY） 
   --number_columns 654
 done
 
@@ -67,7 +67,7 @@ done
             --test_data /path/test_data_BV.npy 
             --folddir /path/fold/ 
             --outdir /home/xie_wenping/influenza_B/predict/BV/train_validate_test/esm2-and-7-features/4-5fold_mode_pred_test/lr-e3-time-train-long \
-            --type BV 
+            --type BV(or BY)
             --number_columns  654
             --fold ${i} 
         done
