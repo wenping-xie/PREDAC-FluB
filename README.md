@@ -1,5 +1,5 @@
 ## # PREDAC-FluB
-
+PREDAC-FluB solves the challenge of influenza B virus antigen prediction through an innovative fusion of protein language models and CNNs, excelling in accurately clustering antigens and predicting antigenic relationships, thus serving as a vital tool in influenza vaccine development.
 ## Prerequisites
 
     tensorflow==2.12.0
