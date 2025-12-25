@@ -39,13 +39,12 @@ else:
 data_type = args.type
 length = 346 if data_type in ['BV', 'BY'] else None
 
-# 构造 log 文件路径
 log_path = os.path.join(outdir_0, str(fold), 'log.csv')
 info = pd.read_csv(log_path, index_col=0)
 info = info.iloc[:200]
 dfmax = info[info['AUC'] == info['AUC'].max()].index[0] + 1
 dfmax = f"{dfmax:02d}"  # Zero-pad to ensure two digits
-# 假设你的模型保存在每个fold的子目录中
+
 fold_dir = os.path.join(outdir_0, str(fold))
 model_filename = f'model_{dfmax}'
 model_path = os.path.join(fold_dir, model_filename)
@@ -84,8 +83,7 @@ pred_y_0 = pred_y[:, 1]
 pred_y_0_np = np.array(pred_y_0)
 true_y_np = np.array(test_y_0)
 all_np = np.array(list(zip(true_y_np, pred_y_0_np)))
- ###计算混淆矩阵
-cm = confusion_matrix(test_y_0, pred_y_0 > 0.5)  # 假设阈值为 0.5
+cm = confusion_matrix(test_y_0, pred_y_0 > 0.5)  
 np.save(os.path.join(outdir_1, f'confusion_matrix_{fold}.npy'), cm)
 np.save(os.path.join(outdir_1, f'{fold}_pred.npy'), all_np)
 
