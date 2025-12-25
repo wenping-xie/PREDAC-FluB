@@ -80,4 +80,4 @@ done
 ###The input here uses the probability value of antigenic similarity between two strains when the model predicts it.
 python3 UMAP-and-kmeans.py 
 ```
-
+Xie W, Liu J, Wang C, Wang J, Han W, Peng Y, Du X, Meng J, Ning K, Jiang T. PREDAC-FluB: predicting antigenic clusters of seasonal influenza B viruses with protein language model embedding based convolutional neural network. Brief Bioinform. 2025 Jul 2;26(4):bbaf308. doi: 10.1093/bib/bbaf308. PMID: 40665740; PMCID: PMC12264208.
