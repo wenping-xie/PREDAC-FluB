@@ -74,7 +74,7 @@ done
 
 ```
 
-5 ##UMAP-assisted K-means Clustering for for Antigenic Characterization，This section details the methodology employed for antigenic clustering, combining UMAP for dimensionality reduction and K-means for cluster assignment. 
+5 #UMAP-assisted K-means Clustering for for Antigenic Characterization,this section details the methodology employed for antigenic clustering, combining UMAP for dimensionality reduction and K-means for cluster assignment. 
 
 ```python
 ###The input here uses the probability value of antigenic similarity between two strains when the model predicts it.
