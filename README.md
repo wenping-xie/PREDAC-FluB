@@ -8,7 +8,7 @@
     Levenshtein==0.27.1
     numpy==1.23.5
     umap-learn==.5.1
-    scikit-learn== 
+    scikit-learn==1.5.2
 
 ## Getting started
 
